@@ -1,0 +1,82 @@
+This guide is from Group Charlie.
+
+
+C++ style guide
+
+Headers
+
+-All c++ files with multiple source files should have a header file. They should all end with ".h". 
+-All header files should have define guards to prevent multiple inclusion of other processor types
+or files.
+
+Comments
+
+-Comments should be provided to clarify what the purpose of a fucntion is.
+-Comments should be used in complicated functions that are not easily understood.
+
+First output of program
+
+-The first output of the program should always have the name of the program and names of project
+members displayed. Also company name and creation date if aplicable.
+-The second output of the program should be a description of what the program does.
+-The third output should be the initial instruction. This is often the first prompt for user
+input.
+
+Functions
+
+-Key functions should be included in seperate files. They will be called in the header function
+of the program.
+-Functions should be as short as possible. If they are long, team members should consider intializing
+another function to handle a task of the function.
+
+-Makefiles
+
+When there is a program with many files, it is a waste of time to recompile every single file
+to fix a mistake that is present in only one or a few files. This is where a make file comes in.
+If there is a mistake in a few files in a program, there should be a makefile that targets only
+the culprit files. This way, only those files are recompiled.
+
+Include files
+
+-include files should always be included at the begginning of the file.
+
+Global variable
+
+-global variables should be avoided if possible.
+
+-Classes
+
+Classes should all be in the same general location of the file. They should be listed and defined
+before the exectuion of the main function.
+
+Naming
+
+    All names will be lowercase. If there are two words in a name then they will be seperated by 
+    an underscore. The name is to be directly related to the contents or function of what they 
+    are representing.
+    Examples:
+        function()
+        double_function()
+
+On positioning '{' & '}'
+
+    For simplicity and clarity both '{' & '}' will recieve their own line in the program.
+    Examples:
+        int main()
+        {
+            return 0
+        }
+
+        Or
+
+        int main()
+        {
+            for example;
+            {
+                return 42;
+            }
+
+            return 42;
+        }
+
+
